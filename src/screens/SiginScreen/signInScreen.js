@@ -21,6 +21,16 @@ const signInScreen = () => {
   const onForgotPasswordPressed = () => {
     console.warn("on Forgot Password Pressed");
   }
+
+  const onSiginFacebook = () => {
+    console.warn('facebook')
+  }
+  const onSiginGoogle = () => {
+    console.warn('google')
+  }
+  const onSiginApple = () => {
+    console.warn('apple')
+  }
   
 
   return (
@@ -43,13 +53,25 @@ const signInScreen = () => {
        secureTextEntry={true}
        />
        <CustomButton 
-       text="Sig in"
+       text="Sign in"
        onPress={onSiginPressed}
        />
        <CustomButton 
        text="Forgot Password"
        onPress={onForgotPasswordPressed}
        type = "TERTIARY"
+       />
+       <CustomButton 
+       text="Sign in with FaceBook"
+       onPress={onSiginFacebook}
+       />
+       <CustomButton 
+       text="Sig in with Google"
+       onPress={onSiginGoogle}
+       />
+       <CustomButton 
+       text="Sig in with apple"
+       onPress={onSiginApple}
        />
     </View>
   );
